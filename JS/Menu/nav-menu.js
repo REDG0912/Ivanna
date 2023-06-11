@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     var menu = document.querySelector("header");
     var burger = document.getElementById("burger");
-    document.addEventListener("click", function(event) {
+    document.addEventListener("touchstart", function(event) {
         var targetElement = event.target;
         var isClickInsideMenu = menu.contains(targetElement) || targetElement === menu;
         if (!isClickInsideMenu) {

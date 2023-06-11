@@ -593,6 +593,8 @@ header.open .header__burger-btn span:nth-child(3) {
 .main .layers__container .layer-1 {
   -webkit-transform: translateZ(-55px) scale(1.06);
           transform: translateZ(-55px) scale(1.06);
+  height: 125%;
+  width: 125%;
 }
 .main .layers__container .layer-2 {
   width: 100%;

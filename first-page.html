@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <title>Ivanna</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <button class="header__burger-btn" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+            <a href="#" class="logo">
+                <img class="logo__img" src="./assets/logo/logo.png" alt="Логотип">
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#shihno">
+                            О проекте:
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Обо мне:
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Варианты сайтов:
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Партнеры:
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Связаться со мной:
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="layers">
+            <div class="layers__container">
+                <div class="layers__item layer-1" style="background-image: url(img/layer-1.jpg);"></div>
+                <div class="layers__item layer-2">
+                    <img src="./img/layer-2.png" alt="layer">
+                </div>
+                <div class="layers__item layer-3">
+                    <div class="hero-content wow fadeInRightBig data-wow-offset: 0">
+                        <h1>IVANNA <span>DISIGN AND LAYOUT</span></h1>
+                        <a href="#shihno"><button class="button-start">Узнать больше</button></a>
+                    </div>
+                </div>
+                <div class="layers__item layer-4">
+                    <img src="./img/layer-5.png" alt="layer">
+                </div>
+                <div class="layers__item layer-5">
+                    <img src="./img/layer-6.png" alt="layer">
+                </div>
+            </div>
+        </section>
+        <section class="page-too">
+            <div class="content">
+            <div class="background-img" style="background-image: url(img/layer-1.jpg);">
+            </div>
+        </div>
+        <div class="info" id="shihno">
+            <ul>
+                <li class="wow row block-1 bounceInLeft" data-wow-duration="1.3s">
+                    <ul>
+                        <li>
+                        <img src="./img/msi-2.png" alt="notebook">
+                         </li>
+                    </ul>
+                </li>
+                <li class="block-2">
+                    <ul>
+                        <li class="text wow bounceInLeft" data-wow-delay="0.6s">
+                            IVANNA</li>
+                        <li class="wow bounceInLeft" data-wow-delay="0.8s">
+                             - являеться 
+                        </li>
+                        <li class="wow bounceInLeft" data-wow-delay="1s">первоначальной версией сайта</li> 
+                        <li class="wow bounceInLeft" data-wow-delay="1.2s">для продвижения продаж</li>
+                        <li class="wow bounceInLeft" data-wow-delay="1.4s">в сфере IT услуг.</li>
+                        <li class="wow bounceInLeft" data-wow-delay="1.6s"> Мы также заботимся</li>
+                        <li class="wow bounceInLeft" data-wow-delay="1.8s">о наших клиентах</li>
+                        <li class="wow bounceInLeft" data-wow-delay="2s">и личными потребностями</li>
+                        <li class="wow bounceInLeft" data-wow-delay="2.2s">творческих личностей.</li>
+                        <li class="wow bounceInRight" data-wow-delay="2.2s"><button class="variant" >Показать варианты</button></li>
+                    </ul>
+                    
+                </li>
+            </ul>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <div class="links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Privacy &amp cookies</a></li>
+            </ul>
+            <ul class="social-link">
+                <li class="images">
+                    <a href="https://www.facebook.com/profile.php?id=100022565294939">
+                    <img src="./icon/facebook.svg" 
+                    alt="facebook">
+                </a>
+                </li>
+                <li class="images">
+                    <a href="https://www.instagram.com/no_plus_me/">
+                    <img src="./icon/instagram.svg" 
+                     alt="instagram">
+                    </a>
+                </li>
+                <li class="images">
+                    <a href="https://t.me/Nikolare">
+                    <img src="./icon/telegram.svg" 
+                    alt="telegram">
+                </a>
+                </li>
+                <li class="images">
+                    <a href="https://github.com/REDG0912">
+                    <img src="./icon/github.svg" 
+                    alt="github">
+                </a>
+                </li>
+            </ul>                  
+        </div>
+        <div class="author">
+            <p>IVANNA &copy Company 2023</p>
+        </div>
+    </footer>
+    <script src="./JS/Main/app.js" defer></script>
+    <script src="./JS/Menu/nav-menu.js"></script>
+    <script src="JS/Wow/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+</body>
+</html>

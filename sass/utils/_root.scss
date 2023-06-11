@@ -1,0 +1,13 @@
+:root {
+	--index: calc(1vw + 1vh);
+	--transition: 1.5s cubic-bezier(.05, .5, 0, 1);
+    --background-header: linear-gradient(-45deg, #361fad, #5309A5, #7C0D93, #640a9c, #5653c2);
+    --background-size: 400% 400%;
+    --animation-header: gradient 10s ease infinite;
+        --menu-width: 220px;
+        --menu-color: #2a4f6e;
+        --item-color: #00000053;
+        --text-footer-color: white;
+        --icon-width-and-height: 110px;
+        --transparent: rgba(49, 21, 21, 0.088);
+}   

@@ -1,0 +1,106 @@
+.main {
+    display: flex;
+    grid-template-rows: 1fr;
+    .page-one {
+        perspective: 1000px;
+            }
+                .background-img {
+                    position: absolute;
+                    inset: -0vw;
+                    background-size: cover;
+                    background-position: center;
+                }
+                .cards-container {
+                    position: relative;
+                    background-size: cover;
+                    background-position: center;
+                    display: block;
+                    z-index: 2;
+                    margin-top: 70px;
+                    .cards {
+                        padding: 20px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        .card:hover {
+                            transform: scale(1.05);
+                            transition: 1s;
+                        }
+                        .card {
+                            display: block; 
+                            text-align: center;
+                            width: 300px;
+                            height: 430px;
+                            padding: 5px;
+                            margin: 15px;
+                            min-width: 250px;
+                            border-radius: 8px;
+                            background: var(--background-cards);
+                            background-size: var(--background-size);
+                            // animation: var(--animation-header);
+                            justify-content: center;
+                            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+                            .images {
+                                height: 100%;
+                                width: 100%;
+                                border-radius: 8px;
+                            }
+                            .card-name {
+                                font-size: 45px;
+                                padding-top: 15px;
+                                font-family: 'Cross Boxed', sans-serif;
+                                color: rgb(211, 85, 211);
+                            }
+                            .poloca {
+                                background: var(--background-cards);
+                                background-size: var(--background-size);
+                                animation: var(--animation-header);
+                                padding: 1px;
+                                width: 100%;
+                                margin: 20px 0;
+                            }
+                            .card-mounth {
+                                font-size: 20px;
+                                color: white;
+                                font-family: "Race Freak", sans-serif;
+                            }
+                            .card-item {
+                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                font-size: 20px;
+                                margin-bottom: 14px;
+                                color: white;
+                            }
+                            .card-time {
+                                font-size: 20px;
+                                font-family: 'Anface Personal Use', sans-serif;
+                                color: white;
+
+                            }
+                            .card-button {
+                                margin-top: 100px;
+                                text-align: end;
+                                margin-right: 10px;
+                                button {
+                                    padding: 7px;
+                                    color: rgb(255, 255, 255);
+                                    font-family: 'Anface Personal Use', sans-serif;
+                                    transform: scale(1);
+                                    font-weight: 700;
+                                    font-size: 20px;
+                                    transition: 0.8s;
+                                    border-radius: 15px;
+                                    border: 1px solid rgba(255, 255, 255, 0);
+                                    background-color: #f37d0f;
+                                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+                                }
+                                button:hover {
+                                    cursor: pointer;
+                                    transform: scale(1.05);
+                                    transition: 0.8s;
+                                }
+                            }
+                        }
+                    }  
+                }
+
+}

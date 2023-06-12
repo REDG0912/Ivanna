@@ -599,6 +599,10 @@ header.open .header__burger-btn span:nth-child(3) {
 .main .cards-container .cards .card {
   display: block;
   text-align: center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 1s;
+  transition: 1s;
   width: 300px;
   height: 430px;
   padding: 5px;

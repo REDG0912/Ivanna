@@ -5,8 +5,9 @@ footer {
     background-size: var(--background-size);
     animation: var(--animation-header);
     color: var(--text-footer-color);
-    padding: 30px;
     padding-bottom: 30px;
+    width: 100vw;
+    min-width: 390px;
         .author {
             display: flex;
             padding-bottom: 15px;
@@ -16,6 +17,7 @@ footer {
             display: grid;
             grid-template-columns: 35% 30% 35%;
             border-bottom: 1px solid white;
+            padding: 30px;
             .social-link {
                 display: flex;
                 flex-wrap: wrap;

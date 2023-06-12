@@ -560,6 +560,8 @@ header.open .header__burger-btn span:nth-child(3) {
   display: -ms-flexbox;
   display: flex;
   grid-template-rows: 1fr;
+  min-height: 100vh;
+  min-width: 390px;
 }
 .main .page-one {
   -webkit-perspective: 1000px;
@@ -568,15 +570,11 @@ header.open .header__burger-btn span:nth-child(3) {
 .main .background-img {
   position: absolute;
   inset: 0vw;
+  min-width: 100vw;
   background-size: cover;
   background-position: center;
 }
 .main .cards-container {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  display: block;
-  z-index: 2;
   margin-top: 70px;
 }
 .main .cards-container .cards {
@@ -690,8 +688,9 @@ footer {
   -webkit-animation: var(--animation-header);
           animation: var(--animation-header);
   color: var(--text-footer-color);
-  padding: 30px;
   padding-bottom: 30px;
+  width: 100vw;
+  min-width: 390px;
 }
 footer .author {
   display: -webkit-box;
@@ -706,6 +705,7 @@ footer .links {
   display: grid;
   grid-template-columns: 35% 30% 35%;
   border-bottom: 1px solid white;
+  padding: 30px;
 }
 footer .links .social-link {
   display: -webkit-box;

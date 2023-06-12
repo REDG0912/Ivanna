@@ -1,21 +1,19 @@
 .main {
     display: flex;
     grid-template-rows: 1fr;
+    min-height: 100vh;
+    min-width: 390px;
     .page-one {
         perspective: 1000px;
             }
                 .background-img {
                     position: absolute;
                     inset: -0vw;
+                    min-width: 100vw;
                     background-size: cover;
                     background-position: center;
                 }
                 .cards-container {
-                    position: relative;
-                    background-size: cover;
-                    background-position: center;
-                    display: block;
-                    z-index: 2;
                     margin-top: 70px;
                     .cards {
                         padding: 20px;

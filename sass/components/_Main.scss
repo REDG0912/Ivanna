@@ -79,7 +79,7 @@
         font-family: Arial;
         font-weight: 600;
         text-transform: uppercase;
-        font-size: calc(var(--index) * 0.71);
+        font-size: calc(var(--index-button) * 0.72);
         letter-spacing: -0.02vw;
         padding: calc(var(--index) * 0.7) calc(var(--index) * 1.25);
         background-color: transparent;
@@ -178,7 +178,7 @@
                     font-family: Arial;
                     font-weight: 600;
                     text-transform: uppercase;
-                    font-size: calc(var(--index) * 0.71);
+                    font-size: calc(var(--index-button) * 0.72);
                     letter-spacing: -0.02vw;
                     padding: calc(var(--index) * 0.7) calc(var(--index) * 1.25);
                     background-color: transparent;

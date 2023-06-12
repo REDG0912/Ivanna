@@ -371,6 +371,7 @@ ul {
 
 :root {
   --index: calc(1vw + 1vh);
+  --index-button: calc(1vw + 2vh);
   --transition: 1.5s cubic-bezier(.05, .5, 0, 1);
   --background-header: linear-gradient(-45deg, #361fad, #5309A5, #7C0D93, #640a9c, #5653c2);
   --background-size: 400% 400%;
@@ -643,7 +644,7 @@ header.open .header__burger-btn span:nth-child(3) {
   font-family: Arial;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: calc(var(--index) * 0.71);
+  font-size: calc(var(--index-button) * 0.72);
   letter-spacing: -0.02vw;
   padding: calc(var(--index) * 0.7) calc(var(--index) * 1.25);
   background-color: transparent;
@@ -756,7 +757,7 @@ header.open .header__burger-btn span:nth-child(3) {
   font-family: Arial;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: calc(var(--index) * 0.71);
+  font-size: calc(var(--index-button) * 0.72);
   letter-spacing: -0.02vw;
   padding: calc(var(--index) * 0.7) calc(var(--index) * 1.25);
   background-color: transparent;

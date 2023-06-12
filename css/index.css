@@ -612,7 +612,7 @@ header.open .header__burger-btn span:nth-child(3) {
   width: 125%;
 }
 .main .layers__container .hero-content {
-  font-size: calc(var(--index) * 2.9);
+  font-size: calc(var(--index) * 2.3);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: calc(var(--index) * -0.15);
@@ -709,7 +709,7 @@ header.open .header__burger-btn span:nth-child(3) {
 .main .page-too .info ul li {
   display: block;
   width: 50%;
-  min-width: 400px;
+  min-width: 300px;
 }
 .main .page-too .info ul .block-1 ul {
   display: block;

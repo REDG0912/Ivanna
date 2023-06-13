@@ -6,11 +6,12 @@
     min-width: 390px;
     .page-one {
         perspective: 1000px;
+        min-width: 100%;
             }
                 .background-img {
                     position: absolute;
                     inset: -0vw;
-                    min-width: 100vw;
+                    min-width: 100%;
                     background-size: cover;
                     background-position: center;
                 }

@@ -567,11 +567,12 @@ header.open .header__burger-btn span:nth-child(3) {
 .main .page-one {
   -webkit-perspective: 1000px;
           perspective: 1000px;
+  min-width: 100%;
 }
 .main .background-img {
   position: absolute;
   inset: 0vw;
-  min-width: 100vw;
+  min-width: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -690,7 +691,7 @@ footer {
           animation: var(--animation-header);
   color: var(--text-footer-color);
   padding-bottom: 30px;
-  width: 100vw;
+  width: 100%;
   min-width: 390px;
 }
 footer .author {

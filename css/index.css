@@ -559,7 +559,7 @@ header.open .header__burger-btn span:nth-child(3) {
 .main {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  width: 100vw;
+  width: 100%;
   min-width: 390px;
 }
 .main .layers {
@@ -792,7 +792,7 @@ footer {
   color: var(--text-footer-color);
   padding-top: 100px;
   padding-bottom: 30px;
-  width: 100vw;
+  width: 100%;
   min-width: 390px;
 }
 footer .author {

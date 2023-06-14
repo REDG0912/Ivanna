@@ -582,7 +582,6 @@ header.open .header__burger-btn span:nth-child(3) {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  height: 100%;
   inset: 0vw;
   min-width: 390px;
   background-size: cover;

@@ -578,10 +578,8 @@ header.open .header__burger-btn span:nth-child(3) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
   inset: 0vw;
   min-width: 390px;
   background-size: cover;

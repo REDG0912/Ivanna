@@ -1,7 +1,7 @@
 .main {
     display: flex;
     grid-template-rows: 1fr;
-    height: 100vh;  
+    min-height: 100vh;  
     width: 100%;
     .page-one {
         display: flex;
@@ -18,7 +18,6 @@
         padding-bottom: 5px;
         .thank-you-section {
           display: none;
-          margin-top: 20px;
         }
         
         .thank-you-section p {

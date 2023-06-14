@@ -1,15 +1,13 @@
 footer {
-    display: grid;
-    grid-template-rows: 1fr 20px;
+    display: block;
     background: var(--background-header);
     background-size: var(--background-size);
     animation: var(--animation-header);
     color: var(--text-footer-color);
-    padding-bottom: 30px;
     width: 100%;
         .author {
             display: flex;
-            padding-bottom: 15px;
+            flex-wrap: wrap;
             justify-content: center;
         }
         .links {

@@ -413,7 +413,6 @@ ul {
 }
 .container {
   max-width: 1200px;
-  margin: 0 auto;
   padding: 0 15px;
 }
 
@@ -739,21 +738,20 @@ header.open .header__burger-btn span:nth-child(3) {
 }
 
 footer {
-  display: grid;
-  grid-template-rows: 1fr 20px;
+  display: block;
   background: var(--background-header);
   background-size: var(--background-size);
   -webkit-animation: var(--animation-header);
           animation: var(--animation-header);
   color: var(--text-footer-color);
-  padding-bottom: 30px;
   width: 100%;
 }
 footer .author {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

@@ -337,7 +337,6 @@ img {
 
 html {
   scroll-behavior: smooth;
-  min-width: 320px;
 }
 
 body {
@@ -565,7 +564,6 @@ header.open .header__burger-btn span:nth-child(3) {
   grid-template-rows: 1fr;
   min-height: 100vh;
   width: 100%;
-  padding-top: 65px;
 }
 .main .page-one {
   display: -webkit-box;

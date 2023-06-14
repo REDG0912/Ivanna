@@ -335,11 +335,11 @@ img {
 
 html {
   scroll-behavior: smooth;
-  width: 100wv;
 }
 
 body {
   font-family: Arial, Verdana, sans-serif;
+  background-color: blue;
 }
 
 ::-webkit-scrollbar {
@@ -473,6 +473,7 @@ ul {
   display: block;
 }
 .logo__img {
+  padding: 8px;
   width: 170px;
 }
 
@@ -560,7 +561,6 @@ header.open .header__burger-btn span:nth-child(3) {
   display: grid;
   grid-template-rows: 1fr 1fr;
   width: 100%;
-  min-width: 390px;
 }
 .main .layers {
   -webkit-perspective: 1000px;
@@ -783,23 +783,21 @@ header.open .header__burger-btn span:nth-child(3) {
 }
 
 footer {
-  display: grid;
-  grid-template-rows: 1fr 20px;
+  display: block;
   background: var(--background-header);
   background-size: var(--background-size);
   -webkit-animation: var(--animation-header);
           animation: var(--animation-header);
   color: var(--text-footer-color);
-  padding-top: 100px;
-  padding-bottom: 30px;
   width: 100%;
-  min-width: 390px;
+  margin-top: 90px;
 }
 footer .author {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

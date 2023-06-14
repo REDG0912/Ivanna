@@ -1,17 +1,14 @@
 footer {
-    display: grid;
-    grid-template-rows: 1fr 20px;
+    display: block;
     background: var(--background-header);
     background-size: var(--background-size);
     animation: var(--animation-header);
     color: var(--text-footer-color);
-    padding-top: 100px;
-    padding-bottom: 30px;
     width: 100%;
-    min-width: 390px;
+    margin-top: 90px;
         .author {
             display: flex;
-            padding-bottom: 15px;
+            flex-wrap: wrap;
             justify-content: center;
         }
         .links {
@@ -23,6 +20,7 @@ footer {
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
+
             }
             ul {
                 margin: 0 30%;

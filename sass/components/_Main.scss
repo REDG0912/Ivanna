@@ -2,8 +2,6 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     width: 100%;
-    min-width: 390px;
-
     .layers {
         perspective: 1000px;
         overflow: hidden;

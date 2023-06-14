@@ -337,6 +337,7 @@ img {
 
 html {
   scroll-behavior: smooth;
+  min-width: 320px;
 }
 
 body {
@@ -565,7 +566,6 @@ header.open .header__burger-btn span:nth-child(3) {
   grid-template-rows: 1fr;
   min-height: 100vh;
   width: 100%;
-  min-width: 390px;
   padding-top: 65px;
 }
 .main .page-one {
@@ -582,13 +582,13 @@ header.open .header__burger-btn span:nth-child(3) {
       flex-wrap: wrap;
   width: 100%;
   inset: 0vw;
-  min-width: 390px;
   background-size: cover;
   background-position: center;
   padding-bottom: 5px;
 }
 .main .page-one .thank-you-section {
   display: none;
+  margin-top: 20px;
 }
 .main .page-one .thank-you-section p {
   font-weight: 800;
@@ -748,7 +748,6 @@ footer {
   color: var(--text-footer-color);
   padding-bottom: 30px;
   width: 100%;
-  min-width: 390px;
 }
 footer .author {
   display: -webkit-box;

@@ -15,13 +15,13 @@
             <button class="header__burger-btn" id="burger">
                 <span></span><span></span><span></span>
             </button>
-            <a href="./first-page.html" class="logo">
+            <a href="#" class="logo">
                 <img class="logo__img" src="./assets/logo/logo.png" alt="Логотип">
             </a>
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link" href="#shihno">
+                        <a class="menu__link" href="../first-page.html#shihno">
                             О проекте:
                         </a>
                     </li>
@@ -31,7 +31,7 @@
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="./variants/Variant.html">
+                        <a class="menu__link" href="../variants/Variant.html">
                             Варианты сайтов:
                         </a>
                     </li>
@@ -41,7 +41,7 @@
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="./contact/contact.html">
+                        <a class="menu__link" href="#">
                             Связаться со мной:
                         </a>
                     </li>
@@ -50,67 +50,43 @@
         </div>
     </header>
     <main class="main">
-        <section class="layers">
-            <div class="layers__container">
-                <div class="layers__item layer-1" style="background-image: url(assets/img/layer-1.jpg);"></div>
-                <div class="layers__item layer-2">
-                    <img src="./assets/img/layer-2.png" alt="layer">
-                </div>
-                <div class="layers__item layer-3">
-                    <div class="hero-content wow fadeInRightBig data-wow-offset: 0">
-                        <h1>IVANNA <span>DISIGN AND LAYOUT</span></h1>
-                        <a href="#shihno"><button class="button-start">Узнать больше</button></a>
-                    </div>
-                </div>
-                <div class="layers__item layer-4">
-                    <img src="./assets/img/layer-5.png" alt="layer">
-                </div>
-                <div class="layers__item layer-5">
-                    <img src="./assets/img/layer-6.png" alt="layer">
-                </div>
-            </div>
-        </section>
-        <section class="page-too">
-            <div class="content">
-            <div class="background-img" style="background-image: url(assets/img/layer-1.jpg);">
-            </div>
-        </div>
-        <div class="info" id="shihno">
-            <ul>
-                <li class="wow row block-1 bounceInLeft" data-wow-duration="1.3s">
-                    <ul>
-                        <li>
-                        <img src="./assets/img/msi-2.png" alt="notebook">
-                         </li>
-                    </ul>
+        <section class="page-one background-img" style="background-image: url(assets/img/layer-1.jpg);">
+            <ul class="form-contact wow fadeInLeftBig">
+                <li class="text">Чтобы связаться с нами можете оставить здесь свои данные:</li>
+                <li class="text-form">
+                    <input type="email" placeholder="Email">
                 </li>
-                <li class="block-2">
-                    <ul>
-                        <li class="text wow bounceInLeft" data-wow-delay="0.6s">
-                            IVANNA</li>
-                        <li class="wow bounceInLeft" data-wow-delay="0.8s">
-                             - являеться 
-                        </li>
-                        <li class="wow bounceInLeft" data-wow-delay="1s">первоначальной версией сайта</li> 
-                        <li class="wow bounceInLeft" data-wow-delay="1.2s">для продвижения продаж</li>
-                        <li class="wow bounceInLeft" data-wow-delay="1.4s">в сфере IT услуг.</li>
-                        <li class="wow bounceInLeft" data-wow-delay="1.6s"> Мы также заботимся</li>
-                        <li class="wow bounceInLeft" data-wow-delay="1.8s">о наших клиентах</li>
-                        <li class="wow bounceInLeft" data-wow-delay="2s">и личными потребностями</li>
-                        <li class="wow bounceInLeft" data-wow-delay="2.2s">творческих личностей.</li>
-
-                        <li class="wow bounceInRight" data-wow-delay="2.2s"><a href="./variants/Variant.html"><button class="variant">Показать варианты</button></a></li>
-                    </ul>
-                    
+                <li class="text-form">
+                    <input type="number" placeholder="Номер телефона">
+                </li>
+                <li class="custom-select-2">
+                    <div class="rgb">
+                    <div class="dropdown">
+                        <button class="dropdown-button">Какой сайт вы выбрали?<span>(Выбирать не обязательно)</span>
+                        </button>
+                        <ul class="dropdown-list">
+                          <li>BASIC</li>
+                          <li>STANDART</li>
+                          <li>PROFI</li>
+                          <li>EXTREME</li>
+                          <li>IVANNA +</li>
+                        </ul>
+                      </div>
+                    </div>
+                </li>
+                <li class="button-form">
+                    <button class="button-contact">Отправить</button>
                 </li>
             </ul>
-        </div>
+            <div class="thank-you-section wow rotateIn">
+                <p>Благодарим за заказ, в скором времени мы с вами свяжемся.</p>
+              </div>
         </section>
     </main>
     <footer>
         <div class="links">
             <ul>
-                <li><a href="#">Главная</a></li>
+                <li><a href="../first-page.html">Главная</a></li>
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Галерея</a></li>
                 <li><a href="#">Новости</a></li>
@@ -152,7 +128,8 @@
             <p>IVANNA &copy Company 2023</p>
         </div>
     </footer>
-    <script src="./JS/Main/app.js" defer></script>
+    <script src="./JS/Message/message.js"></script>
+    <script src="./JS/Select/select.js"></script>
     <script src="./JS/Menu/nav-menu.js"></script>
     <script src="JS/Wow/wow.min.js"></script>
               <script>

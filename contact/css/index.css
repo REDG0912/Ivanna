@@ -373,12 +373,15 @@ ul {
 
 :root {
   --index: calc(1vw + 1vh);
+  --index-too: calc(1vw);
+  --index-button: calc(1vw + 2vh);
   --transition: 1.5s cubic-bezier(.05, .5, 0, 1);
   --background-header: linear-gradient(-45deg, #361fad, #5309A5, #7C0D93, #640a9c, #5653c2);
   --background-size: 400% 400%;
   --background-cards: linear-gradient(90deg, #f84a98,#e454ba,#c465d9,#9375f0,#4084fe);
   --animation-header: gradient 10s ease infinite;
-  --menu-width: 220px;
+  --background-form: linear-gradient(-45deg, #fff, grey)
+      --menu-width: 220px;
   --text-footer-color: white;
   --icon-width-and-height: 110px;
   --transparent: rgba(49, 21, 21, 0.088);
@@ -562,134 +565,178 @@ header.open .header__burger-btn span:nth-child(3) {
   grid-template-rows: 1fr;
   min-height: 100vh;
   width: 100%;
-  min-width: 390px;
-  padding-top: 65px;
 }
 .main .page-one {
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  min-width: 100%;
-}
-.main .background-img {
-  position: absolute;
-  inset: 0vw;
-  min-width: 100%;
-  background-size: cover;
-  background-position: center;
-}
-.main .cards-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: absolute;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
   height: 100%;
+  inset: 0vw;
+  min-width: 390px;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 5px;
 }
-.main .cards-container .cards {
+.main .page-one .thank-you-section {
+  display: none;
+  margin-top: 20px;
+}
+.main .page-one .thank-you-section p {
+  font-weight: 800;
+  font-size: calc(var(--index) * 1.4);
+  color: greenyellow;
+  background-color: rgba(255, 255, 255, 0.358);
+  border-radius: 10px;
   padding: 20px;
+  margin: 10px;
+}
+.main .page-one .custom-select-2 {
+  display: block;
+  border-radius: 10px;
+  font-size: calc(var(--index) * 1.2);
+  font-weight: 900;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 4px;
+  background: var(--background-cards);
+  background-size: var(--background-size);
+  -webkit-animation: var(--animation-header);
+          animation: var(--animation-header);
+  text-shadow: 2px 2px 2px rgb(0, 244, 154);
+  color: white;
+  margin: 20px;
+}
+.main .page-one .custom-select-2 .rgb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.main .page-one .custom-select-2 .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.main .page-one .custom-select-2 .dropdown-button {
+  border: none;
+  background-color: rgba(251, 248, 248, 0);
+  border-radius: 10px 10px 10px 0px;
+  color: #888993;
+  font-weight: 900;
+  padding: 10px 20px;
+  font-size: calc(var(--index) * 1.2);
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.main .page-one .custom-select-2 .dropdown-button span {
+  font-size: calc(var(--index) * 0.8);
+  color: coral;
+  margin-left: 15px;
+}
+.main .page-one .custom-select-2 .dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(31, 123, 162, 0.7568627451);
+  list-style-type: none;
+  border-radius: 0px 10px 10px;
+  padding: 0;
+  margin: 0;
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+.main .page-one .custom-select-2 .dropdown-list li {
+  padding: 10px 20px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.main .page-one .custom-select-2 .dropdown-list li:hover {
+  background-color: #ccc;
+}
+.main .page-one .custom-select-2 .dropdown-list li:last-child:hover {
+  background-color: #ccc;
+  border-radius: 0px 0px 10px 10px;
+}
+.main .page-one .custom-select-2 .dropdown:hover .dropdown-list {
+  display: block;
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+.main .page-one .custom-select-2 .dropdown-list.active {
+  display: block;
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+.main .page-one .form-contact {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.358);
+  border-radius: 10px;
+  margin: 10px;
+}
+.main .page-one .form-contact .text, .main .page-one .form-contact .text-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.main .cards-container .cards .card:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-.main .cards-container .cards .card {
-  display: block;
-  text-align: center;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: 1s;
-  transition: 1s;
-  width: 300px;
-  height: 430px;
-  padding: 5px;
-  margin: 15px;
-  min-width: 250px;
+  font-size: calc(var(--index) * 1.2);
+  font-weight: 900;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 15px;
+  text-shadow: 2px 2px 2px darkmagenta;
+  color: white;
   border-radius: 8px;
-  background: var(--background-cards);
-  background-size: var(--background-size);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  margin: 20px;
 }
-.main .cards-container .cards .card .images {
-  height: 100%;
+.main .page-one .form-contact .text input, .main .page-one .form-contact .text-form input {
+  padding: 10px;
+  border-radius: 8px;
   width: 100%;
-  border-radius: 8px;
+  margin: 3px;
+  background-color: rgb(255, 255, 255);
 }
-.main .cards-container .cards .card .card-name {
-  font-size: 45px;
-  padding-top: 15px;
-  font-family: "Cross Boxed", sans-serif;
-  color: rgb(211, 85, 211);
-}
-.main .cards-container .cards .card .poloca {
+.main .page-one .form-contact .text-form {
   background: var(--background-cards);
   background-size: var(--background-size);
   -webkit-animation: var(--animation-header);
           animation: var(--animation-header);
   padding: 1px;
-  width: 100%;
-  margin: 20px 0;
 }
-.main .cards-container .cards .card .card-mounth {
-  font-size: 20px;
-  color: white;
-  font-family: "Race Freak", sans-serif;
+.main .page-one .form-contact .button-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 25px;
 }
-.main .cards-container .cards .card .card-item {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 20px;
-  margin-bottom: 14px;
-  color: white;
-}
-.main .cards-container .cards .card .card-time {
-  font-size: 20px;
-  font-family: "Anface Personal Use", sans-serif;
-  color: white;
-}
-.main .cards-container .cards .card .card-button {
-  margin-top: 100px;
-  text-align: end;
-  margin-right: 10px;
-}
-.main .cards-container .cards .card .card-button button {
-  padding: 7px;
-  color: rgb(255, 255, 255);
-  font-family: "Anface Personal Use", sans-serif;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+.main .page-one .form-contact .button-form button {
+  font-size: calc(var(--index) * 1.6);
+  border-radius: 8px;
+  padding: 10px;
   font-weight: 700;
-  font-size: 20px;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0);
-  background-color: #f37d0f;
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.244);
 }
-.main .cards-container .cards .card .card-button button:hover {
+.main .page-one .form-contact .button-form .button-contact:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  background-color: rgba(130, 126, 126, 0.386);
 }
 
 footer {

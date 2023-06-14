@@ -563,7 +563,7 @@ header.open .header__burger-btn span:nth-child(3) {
   display: -ms-flexbox;
   display: flex;
   grid-template-rows: 1fr;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
 }
 .main .page-one {

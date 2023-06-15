@@ -114,6 +114,15 @@
             background-color: rgba(255, 255, 255, 0.358);
             border-radius: 10px;
             margin: 10px;
+            .error {
+              border: 3px solid red;
+              color: red;
+          }
+      
+          .success {
+              border: 3px solid green;
+              color: green;
+          }
         .text, .text-form{
             display: flex;
             font-size: calc(var(--index) * 1.2);

@@ -22,27 +22,27 @@
                 <ul class="menu__list">
                     <li class="menu__item">
                         <a class="menu__link" href="../first-page.html#shihno">
-                            О проекте:
+                            О проекте
                         </a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="#">
-                            Обо мне:
+                            Обо мне
                         </a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="../variants/Variant.html">
-                            Варианты сайтов:
+                            Варианты сайтов
                         </a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="#">
-                            Партнеры:
+                            Партнеры
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            Связаться со мной:
+                        <a class="menu__link active" href="#">
+                            Связаться со мной
                         </a>
                     </li>
                 </ul>
@@ -54,28 +54,28 @@
             <ul class="form-contact wow fadeInLeftBig">
                 <li class="text">Чтобы связаться с нами можете оставить здесь свои данные:</li>
                 <li class="text-form">
-                    <input type="email" placeholder="Email">
+                    <input id="emailInput" type="email" placeholder="Email">
                 </li>
                 <li class="text-form">
-                    <input type="number" placeholder="Номер телефона">
+                    <input id="phoneInput" type="number" placeholder="Номер телефона">
                 </li>
                 <li class="custom-select-2">
                     <div class="rgb">
-                    <div class="dropdown">
-                        <button class="dropdown-button">Какой сайт вы выбрали?<span>(Выбирать не обязательно)</span>
-                        </button>
-                        <ul class="dropdown-list">
-                          <li>BASIC</li>
-                          <li>STANDART</li>
-                          <li>PROFI</li>
-                          <li>EXTREME</li>
-                          <li>IVANNA +</li>
-                        </ul>
-                      </div>
+                        <div class="dropdown">
+                            <button class="dropdown-button">Какой сайт вы выбрали?<span>(Выбирать не обязательно)</span>
+                            </button>
+                            <ul class="dropdown-list">
+                                <li>BASIC</li>
+                                <li>STANDART</li>
+                                <li>PROFI</li>
+                                <li>EXTREME</li>
+                                <li>IVANNA +</li>
+                            </ul>
+                        </div>
                     </div>
                 </li>
                 <li class="button-form">
-                    <button class="button-contact">Отправить</button>
+                    <button id="submitButton" class="button-contact" disabled>Отправить</button>
                 </li>
             </ul>
             <div class="thank-you-section wow rotateIn">
@@ -128,6 +128,7 @@
             <p>IVANNA &copy Company 2023</p>
         </div>
     </footer>
+    <script src="./JS/Form/form.js"></script>
     <script src="./JS/Message/message.js"></script>
     <script src="./JS/Select/select.js"></script>
     <script src="./JS/Menu/nav-menu.js"></script>

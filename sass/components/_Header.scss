@@ -83,13 +83,24 @@
         display: block;
         font-size: 16px;
         padding: 10px 2px;
-        transform: scale(1);
+        color: white;
         transition: 0.8s;
     }
-    .menu__link:hover {
-        display: block;
-        transform: scale(1.2);
+    .menu__item {
+        padding: 2px 5px;
         transition: 0.8s;
+    }
+    .active {
+        color: rgb(57, 133, 231);
+        font-weight: 800;
+    }
+    .menu__item:hover {
+        display: block;
+        transition: 0.8s;
+        background-color: rgba(255, 255, 255, 0.262);
+        border-radius: 10px;
+        padding: 2px 5px;
+        box-shadow: 0px 4px 21px -1px rgba(34, 60, 80, 0.13);
     }
 }
 header.open {
@@ -135,6 +146,11 @@ header.open {
                 font-size: 21px;
                 display: block;
                 padding: 10px 0;
+            }
+            
+            .active {
+                color: rgb(57, 133, 231);
+                font-weight: 800;
             }
         }
 

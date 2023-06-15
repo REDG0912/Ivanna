@@ -17,6 +17,8 @@ emailInput.addEventListener('input', function() {
 
 phoneInput.addEventListener('input', function() {
     var phoneValue = phoneInput.value;
+    phoneValue = phoneValue.slice(0, 13); // Ограничение до 13 символов
+    phoneInput.value = phoneValue;
     if (!validatePhone(phoneValue)) {
         phoneInput.classList.remove('success');
         phoneInput.classList.add('error');
@@ -27,6 +29,12 @@ phoneInput.addEventListener('input', function() {
     checkFormValidity();
 });
 
+function validatePhone(phone) {
+    var regex = /^[0-9+]+$/;
+    var phoneLength = phone.replace(/\D/g, '').length;
+    return regex.test(phone) && phoneLength >= 11 && phoneLength <= 13;
+}
+
 function validateEmail(email) {
     var regex = /^[a-zA-Z0-9.@]+$/;
     return regex.test(email);
@@ -35,7 +43,7 @@ function validateEmail(email) {
 function validatePhone(phone) {
     var regex = /^[0-9+]+$/;
     var phoneLength = phone.replace(/\D/g, '').length;
-    return regex.test(phone) && phoneLength >= 11 && phoneLength <= 12;
+    return regex.test(phone) && phoneLength >= 11 && phoneLength <= 13;
 }
 
 function checkFormValidity() {

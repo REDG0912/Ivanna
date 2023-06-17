@@ -1,13 +1,13 @@
 .main {
     display: flex;
-    grid-template-rows: 1fr;
-    min-height: 100vh;  
+    grid-template-rows: 1fr;  
     width: 100%;
+    min-height: 100vh;
     padding-top: 65px;
     .page-one {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         flex-wrap: wrap;
         width: 100%;
         inset: 0vw;
@@ -17,8 +17,7 @@
         $container-size: 200px;
         $icon-size: 70px;
         $radius: $container-size / 2;
-        overflow: hidden;
-        
+        overflow: hidden;      
         @keyframes spin {
           0% {
             transform: rotate(0deg);
@@ -26,6 +25,56 @@
           100% {
             transform: rotate(360deg);
           }
+        }
+        .text {
+            display: flex;
+            align-items: start;
+            width: 100%;
+            position: absolute;
+            display: block;
+            top: 80px;
+            max-width: 600px;
+            li {
+                font-size: calc(var(--index) * 1.3);
+                color: white;
+                font-weight: 700;
+                text-shadow: 2px 2px 2px rgb(216, 0, 244);
+                margin: 10px;
+                margin-bottom: 0;
+                padding: 10px;
+                border-radius: 10px 10px 0px 0;
+                background-color: rgba(250, 235, 215, 0.277);
+            }
+            li:last-child{
+                margin-top: 0;
+                border-radius: 0px 0px 10px 10px;
+                .social-link {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                .images {
+                    width: calc(var(--index) * 3.5);
+                    height: calc(var(--index) * 3.5);
+                    margin: 0;
+                    background-color: rgba(255, 255, 255, 0);
+                }
+                
+                .images img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 8px;
+                    object-fit: cover;
+                    transform: scale(1);
+                    transition: 0.8s;
+                }
+                
+                .images:hover img {
+                    transform: scale(1.2);
+                    transition: 0.8s;
+                }
+                }
+            }
         }
         
         .container {
@@ -47,8 +96,8 @@
               position: absolute;
               top: calc(var(--index) * 6);
               left: calc(var(--index) * 6);
-              width: calc(var(--index) * 3);
-              height: calc(var(--index) * 3);
+              width: calc(var(--index) * 3.8);
+              height: calc(var(--index) * 3.8);
               border-radius: 50%;
             }
             

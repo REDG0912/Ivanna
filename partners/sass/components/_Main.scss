@@ -1,0 +1,78 @@
+.main {
+    display: flex;
+    grid-template-rows: 1fr;
+    min-height: 100vh;  
+    width: 100%;
+    padding-top: 65px;
+    .page-one {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        inset: 0vw;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 5px;
+        $container-size: 200px;
+        $icon-size: 70px;
+        $radius: $container-size / 2;
+        overflow: hidden;
+        
+        @keyframes spin {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        
+        .container {
+          position: relative;
+          display: flex;
+          align-items: center;
+          width: calc(var(--index) *3);
+          height: calc(var(--index)*3);
+          animation: spin 15s linear infinite;
+        
+          .arrow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: calc(var(--index) * 5);
+            transform-origin: bottom center;
+            
+            .icon {
+              position: absolute;
+              top: calc(var(--index) * 6);
+              left: calc(var(--index) * 6);
+              width: calc(var(--index) * 3);
+              height: calc(var(--index) * 3);
+              border-radius: 50%;
+            }
+            
+            &:nth-child(1) {
+              transform: translateX(-50%) translateY(-$radius) rotate(0deg);
+            }
+            
+            &:nth-child(2) {
+              transform: translateX(-50%) translateY(-$radius) rotate(72deg);
+            }
+            
+            &:nth-child(3) {
+              transform: translateX(-50%) translateY(-$radius) rotate(144deg);
+            }
+            
+            &:nth-child(4) {
+              transform: translateX(-50%) translateY(-$radius) rotate(216deg);
+            }
+            
+            &:nth-child(5) {
+              transform: translateX(-50%) translateY(-$radius) rotate(288deg);
+            }
+          }
+        }
+        
+    }
+}

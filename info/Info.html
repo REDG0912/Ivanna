@@ -26,7 +26,7 @@
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="../info/Info.html">
+                        <a class="menu__link active" href="#">
                             О нас
                         </a>
                     </li>
@@ -41,7 +41,7 @@
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link active" href="#">
+                        <a class="menu__link" href="../contact/contact.html">
                             Связаться с нами
                         </a>
                     </li>
@@ -51,43 +51,26 @@
     </header>
     <main class="main">
         <div class="page-one background-img" style="background-image: url(assets/img/layer-1.jpg);">
-            <ul class="form-contact wow fadeInLeftBig">
-                <li class="text">Чтобы связаться с нами можете оставить здесь свои данные:</li>
-                <li class="text-form">
-                    <input id="emailInput" 
-                    type="email" 
-                    placeholder="Email">
-                </li>
-                <li class="text-form">
-                    <input id="phoneInput" 
-                    type="number" 
-                    placeholder="Номер телефона">
-                </li>
-                <li class="custom-select-2">
-                    <div class="rgb">
-                        <div class="dropdown">
-                            <button class="dropdown-button">Какой сайт вы выбрали?<span>(Выбирать не обязательно)</span>
-                            </button>
-                            <ul class="dropdown-list">
-                                <li>BASIC</li>
-                                <li>STANDART</li>
-                                <li>PROFI</li>
-                                <li>EXTREME</li>
-                                <li>IVANNA +</li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="button-form">
-                    <button id="submitButton" class="button-contact" disabled>Отправить</button>
-                </li>
-            </ul>
-            <div class="thank-you-section wow rotateIn">
-                <p>Спасибо вам большое за обращение, в скорем времени мы с вами свяжемся)</p>
-              </div>
+                <ul class="info">
+                    <li class="block">
+                           <ul class="end">
+                            <li class="info-img wow bounceInLeft">
+                                <img src="./assets/icon/build.svg" alt="photo">
+
+                            </li>
+                           </ul>   
+                    </li>
+                    <li class="block">
+                        <ul>
+                            <li class="text wow bounceInRight">
+                               Мы начинающая команда веб разработчиков которая набирает обороты в IT индустрии по возможности выполнения ваших заказов и поддержке качества товара.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
     </main>
-    <footer class="footer">
+    <footer>
         <div class="links">
             <ul>
                 <li><a href="../first-page.html">Главная</a></li>
@@ -132,9 +115,6 @@
             <p>IVANNA &copy Company 2023</p>
         </div>
     </footer>
-    <script src="./JS/Form/form.js"></script>
-    <script src="./JS/Message/message.js"></script>
-    <script src="./JS/Select/select.js"></script>
     <script src="./JS/Menu/nav-menu.js"></script>
     <script src="JS/Wow/wow.min.js"></script>
               <script>

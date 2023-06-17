@@ -34,6 +34,7 @@
             display: block;
             top: 80px;
             max-width: 600px;
+            overflow: hidden;
             li {
                 font-size: calc(var(--index) * 1.3);
                 color: white;

@@ -632,6 +632,7 @@ header.open .header__burger-btn span:nth-child(3) {
   display: block;
   top: 80px;
   max-width: 600px;
+  overflow: hidden;
 }
 .main .page-one .text li {
   font-size: calc(var(--index) * 1.3);

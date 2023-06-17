@@ -576,7 +576,6 @@ header.open .header__burger-btn span:nth-child(3) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  grid-template-rows: 1fr;
   width: 100%;
   min-height: 100vh;
   padding-top: 65px;

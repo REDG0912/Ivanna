@@ -17,7 +17,7 @@ emailInput.addEventListener('input', function() {
 
 phoneInput.addEventListener('input', function() {
     var phoneValue = phoneInput.value;
-    phoneValue = phoneValue.slice(0, 13);
+    phoneValue = phoneValue.slice(0, 13);   
     phoneInput.value = phoneValue;
     if (!validatePhone(phoneValue)) {
         phoneInput.classList.remove('success');

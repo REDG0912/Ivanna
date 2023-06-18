@@ -15,11 +15,20 @@ emailInput.addEventListener('input', function() {
     checkFormValidity();
 });
 
-phoneInput.addEventListener('input', function() {
+phoneInput.addEventListener('input', function(event) {
     var phoneValue = phoneInput.value;
-    phoneValue = phoneValue.slice(0, 13);   
-    phoneInput.value = phoneValue;
-    if (!validatePhone(phoneValue)) {
+    if (event.inputType === 'insertText' && !/^\d$/.test(event.data)) {
+        phoneInput.value = phoneValue.replace(event.data, '');
+        return;
+    }
+    if (event.inputType !== 'deleteContentBackward' && /^\d$/.test(event.data) && !phoneValue.startsWith('+')) {
+        phoneInput.value = "+" + phoneValue;
+    }
+    var truncatedPhoneValue = phoneInput.value.replace(/[^+\d-]/g, '').slice(0, 13);
+    if (phoneInput.value !== truncatedPhoneValue) {
+        phoneInput.value = truncatedPhoneValue;
+    }
+    if (!validatePhone(truncatedPhoneValue)) {
         phoneInput.classList.remove('success');
         phoneInput.classList.add('error');
     } else {
@@ -29,21 +38,21 @@ phoneInput.addEventListener('input', function() {
     checkFormValidity();
 });
 
+form.addEventListener('focusin', function(event) {
+    if (event.target === phoneInput && !phoneInput.value.startsWith("+")) {
+        phoneInput.value = "+" + phoneInput.value;
+    }
+});
+
 function validatePhone(phone) {
-    var regex = /^[0-9+]+$/;
-    var phoneLength = phone.replace(/\D/g, '').length;
+    var regex = /^[+\d-]+$/;
+    var phoneLength = phone.replace(/[-]/g, '').length;
     return regex.test(phone) && phoneLength >= 11 && phoneLength <= 13;
 }
 
 function validateEmail(email) {
-    var regex = /^[a-zA-Z0-9.@]+$/;
+    var regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return regex.test(email);
-}
-
-function validatePhone(phone) {
-    var regex = /^[0-9+]+$/;
-    var phoneLength = phone.replace(/\D/g, '').length;
-    return regex.test(phone) && phoneLength >= 11 && phoneLength <= 13;
 }
 
 function checkFormValidity() {
@@ -53,12 +62,3 @@ function checkFormValidity() {
         submitButton.disabled = true;
     }
 }
-
-checkFormValidity();
-
-form.addEventListener('submit', function(event) {
-    if (emailInput.value.trim() === '' || phoneInput.value.trim() === '' || emailInput.classList.contains('error') || phoneInput.classList.contains('error')) {
-        event.preventDefault();
-        alert('Вы должны заполнить обе формы правильно.');
-    }
-});
